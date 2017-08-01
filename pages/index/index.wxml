@@ -1,3 +1,5 @@
-<view>
-  <text>hello ~</text>
+<view class="container vertical centered">
+  <view>
+    <text class="header">hello ~</text>
+  </view>
 </view>
