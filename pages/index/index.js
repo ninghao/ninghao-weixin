@@ -18,5 +18,14 @@ Page({
   },
   onUnload() {
     console.log('页面卸载')
+  },
+  onPullDownRefresh() {
+    console.log('页面下拉刷新')
+  },
+  onReachBottom() {
+    console.log('页面到底儿了')
+  },
+  onPageScroll(calculations) {
+    console.log(calculations)
   }
 })

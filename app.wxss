@@ -1,6 +1,6 @@
 .container {
   box-sizing: border-box;
-  height: 100vh;
+  height: 80vh;
   padding: 8px;
   background: #f8f8f8;
   color: rgba(0, 0, 0, 0.85);
@@ -17,4 +17,8 @@
   height: 100vh;
   flex-direction: row;
   align-items: center;
+}
+
+.image > image {
+  width: 100%;
 }
