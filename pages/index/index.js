@@ -1,22 +1,20 @@
+import helper from '../../libs/helper/helper'
 const app = getApp()
 
 Page({
   data: {
     greeting: ''
   },
-  greet(greeting) {
-    return greeting[Math.floor(Math.random() * greeting.length)]
-  },
   tapGreeting(event) {
     console.log(event)
     this.setData({
-      greeting: this.greet(app.globalData.greeting)
+      greeting: helper.randItem(app.globalData.greeting)
     })
   },
   onLoad() {
     console.log('页面加载')
     this.setData({
-      greeting: this.greet(app.globalData.greeting)
+      greeting: helper.randItem(app.globalData.greeting)
     })
   },
   onShow() {
