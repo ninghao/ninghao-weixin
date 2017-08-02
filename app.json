@@ -30,5 +30,6 @@
         "selectedIconPath": "assets/icons/event-active.png"
       }
     ]
-  }
+  },
+  "debug": true
 }
