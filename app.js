@@ -12,5 +12,8 @@ App({
   },
   onError(error) {
     console.log(error)
+  },
+  globalData: {
+    greeting: 'hello ~'
   }
 })
