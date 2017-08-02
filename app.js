@@ -14,6 +14,10 @@ App({
     console.log(error)
   },
   globalData: {
-    greeting: 'hello ~'
+    greeting: [
+      'hello ~',
+      'hola ~',
+      '您好 ~'
+    ]
   }
 })
