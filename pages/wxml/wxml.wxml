@@ -1,6 +1,6 @@
 <view class="container vertical centered">
   <view>
-    <text class="header">views</text>
+    <text class="{{ header.class }}">{{ header.content }}</text>
   </view>
 </view>
 <view class="image">
