@@ -1,0 +1,8 @@
+<view class="container vertical centered">
+  <view>
+    <text class="header">views</text>
+  </view>
+</view>
+<view class="image">
+  <image src="/assets/images/landscape.png"></image>
+</view>

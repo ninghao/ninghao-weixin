@@ -22,3 +22,8 @@
 .image > image {
   width: 100%;
 }
+
+.header {
+  font-size: 32px;
+  font-family: serif;
+}
