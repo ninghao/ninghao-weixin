@@ -1,6 +1,8 @@
 <view class="container vertical centered">
   <view>
-    <text class="{{ header.class }}">{{ header.content }}</text>
+    <text class="{{ header.class }}">
+      {{ header.content ? header.content : "无标题" }}
+    </text>
   </view>
 </view>
 <view class="image">
