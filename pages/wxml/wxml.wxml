@@ -9,6 +9,10 @@
       无标题
     </text>
   </view>
+
+  <view wx:for="{{ fruits }}" class="item" wx:for-item="fruit">
+    {{ index }}: {{ fruit }}
+  </view>
 </view>
 <view class="image">
   <image src="/assets/images/landscape.png"></image>
