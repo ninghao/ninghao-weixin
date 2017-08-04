@@ -1,7 +1,12 @@
 <view class="container vertical centered">
-  <view>
+  <view wx:if="{{ header.show }}">
     <text class="{{ header.class }}">
-      {{ header.content ? header.content : "无标题" }}
+      {{ header.content }}
+    </text>
+  </view>
+  <view wx:else>
+    <text class="{{ header.class }}">
+      无标题
     </text>
   </view>
 </view>

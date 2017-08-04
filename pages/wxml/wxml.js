@@ -7,7 +7,8 @@ Page({
   data: {
     header: {
       content: 'views',
-      class: 'header'
+      class: 'header',
+      show: true
     }
   },
 
