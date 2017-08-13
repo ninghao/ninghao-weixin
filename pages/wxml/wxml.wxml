@@ -1,9 +1,17 @@
-<movable-area>
-  <movable-view
-    direction="all"
-    inertia="{{ true }}"
-    out-of-bounds="{{ true }}"
-    x="30"
-    y="30"
-  />
-</movable-area>
+<view class="container vertical centered">
+  <view>
+
+    <form bindsubmit="formSubmit">
+      <label for="slider">
+        <text>slider</text>
+      </label>
+      <slider id="slider" name="slider" show-value />
+
+      <button form-type="submit">提交</button>
+    </form>
+
+  </view>
+</view>
+<view class="image">
+  <image src="/assets/images/landscape.png"></image>
+</view>

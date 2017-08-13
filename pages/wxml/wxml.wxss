@@ -10,7 +10,7 @@ movable-view {
   background: #6435c9;
 }
 
-image {
+image, .image {
   width: 100%;
 }
 
