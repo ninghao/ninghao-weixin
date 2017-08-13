@@ -1,11 +1,9 @@
-<swiper
-  indicator-dots="{{ true }}"
-  indicator-color="rgba(255, 255, 255, 0.3)"
-  indicator-active-color="#ffffff"
->
-  <block wx:for="{{ images }}">
-    <swiper-item>
-      <image src="{{ item }}" />
-    </swiper-item>
-  </block>
-</swiper>
+<movable-area>
+  <movable-view
+    direction="all"
+    inertia="{{ true }}"
+    out-of-bounds="{{ true }}"
+    x="30"
+    y="30"
+  />
+</movable-area>
