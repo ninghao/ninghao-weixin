@@ -1,22 +1,12 @@
 <view class="container vertical centered">
   <view>
 
-    <form bindsubmit="formSubmit">
-
-      <picker
-        value="{{ pick }}"
-        bindchange="inputHandler"
-        name="picker"
-        mode="region"
-      >
-        <view>
-          <text>{{ pick }}</text>
-        </view>
-      </picker>
-
-      <button form-type="submit">提交</button>
-
-    </form>
+    <navigator
+      open-type="navigate"
+      url="/pages/demo/demo?id=1000"
+    >
+      demo
+    </navigator>
 
   </view>
 </view>

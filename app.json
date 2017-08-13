@@ -2,7 +2,8 @@
   "pages": [
     "pages/wxml/wxml",
     "pages/index/index",
-    "pages/event/event"
+    "pages/event/event",
+    "pages/demo/demo"
   ],
   "window": {
     "navigationBarBackgroundColor": "#fff",
