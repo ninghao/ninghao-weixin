@@ -12,6 +12,10 @@ Page({
     console.log(event.detail.value)
   },
 
+  inputHandler(event) {
+    console.log(event.detail.value)
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */

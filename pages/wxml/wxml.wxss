@@ -1,3 +1,12 @@
+input, textarea {
+  padding: 8px;
+  background: #ffffff;
+  margin: 8px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  width: auto;
+}
+
 movable-area {
   width: 100vw;
   height: 50vh;
