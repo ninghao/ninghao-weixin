@@ -1,7 +1,20 @@
-<import src="../templates/header.wxml" />
 <view class="container vertical centered">
 
-  <template is="header" data="{{ ...header }}" />
+  <view
+    id="header"
+    class="header"
+    style="color: #6435c9"
+  >
+    <text
+      data-title="views"
+      bindtap="tapHandler"
+      hidden="{{ false }}"
+      wx:if="{{ true }}"
+    >
+      views
+    </text>
+  </view>
+  <icon type="info" color="#6435c9" size="40" />
 
 </view>
 <view class="image">

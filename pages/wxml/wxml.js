@@ -5,16 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    header: {
-      content: 'views',
-      class: 'header',
-      show: true
-    },
-    fruits: [
-      '🍎',
-      '🍌',
-      '🍋'
-    ]
+
+  },
+
+  tapHandler(event) {
+    console.log(event)
   },
 
   /**
