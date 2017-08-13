@@ -4,12 +4,13 @@
     <form bindsubmit="formSubmit">
 
       <picker
-        range="{{ items }}"
+        value="{{ pick }}"
         bindchange="inputHandler"
         name="picker"
+        mode="region"
       >
         <view>
-          <text>{{ items[pick] }}</text>
+          <text>{{ pick }}</text>
         </view>
       </picker>
 

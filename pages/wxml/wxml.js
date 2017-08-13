@@ -10,7 +10,7 @@ Page({
       '泰国',
       '日本'
     ],
-    pick: 0
+    pick: ['山东省', '济南市', '槐荫区']
   },
 
   formSubmit(event) {
