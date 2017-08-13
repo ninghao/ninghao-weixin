@@ -13,6 +13,18 @@ Page({
     pick: ['山东省', '济南市', '槐荫区']
   },
 
+  play(event) {
+    console.log(event)
+  },
+
+  pause(event) {
+    console.log(event)
+  },
+
+  ended(event) {
+    console.log(event)
+  },
+
   formSubmit(event) {
     console.log(event.detail.value)
   },

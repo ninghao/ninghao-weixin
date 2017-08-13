@@ -1,12 +1,31 @@
+<image
+  style="background: #ededed; width: 100vw"
+  mode="aspectFill"
+  src="https://raw.githubusercontent.com/ninghao/ninghao-images/master/weixin/app/demo-3.jpg" />
+
 <view class="container vertical centered">
   <view>
 
-    <navigator
-      open-type="navigate"
-      url="/pages/demo/demo?id=1000"
-    >
-      demo
-    </navigator>
+    <!-- <video
+      poster="https://resources.ninghao.net/deng-deng-deng.jpg"
+      src="https://resources.ninghao.net/deng-deng-deng.mp4"
+      objectFit="cover"
+      controls
+      bindplay="play"
+      bindpause="pause"
+      bindended="ended"
+    /> -->
+
+    <!-- <audio
+      poster="https://resources.ninghao.net/deng-deng-deng-1x1.jpg"
+      src="https://resources.ninghao.net/deng-deng-deng.mp3"
+      author="ninghao"
+      name="deng deng deng ~"
+      controls
+      bindplay="play"
+      bindpause="pause"
+      bindended="ended"
+    /> -->
 
   </view>
 </view>
