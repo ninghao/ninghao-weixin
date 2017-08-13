@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    currentView: 'red'
+  },
 
+  setScrollView(event) {
+    this.setData({
+      currentView: event.target.dataset.view
+    })
   },
 
   tapHandler(event) {
