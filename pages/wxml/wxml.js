@@ -5,7 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    items: [
+      {
+        name: '中国',
+        value: 'CN'
+      },
+      {
+        name: '泰国',
+        value: 'TH'
+      },
+      {
+        name: '日本',
+        value: 'JP'
+      },
+    ]
   },
 
   formSubmit(event) {

@@ -3,18 +3,19 @@
 
     <form bindsubmit="formSubmit">
 
-      <input
-        type="text"
-        name="text"
-        placeholder="text"
-        bindinput="inputHandler"
-      />
+      <!-- <checkbox-group name="checkbox" bindchange="inputHandler">
+        <label wx:for="{{ items }}" wx:key="key">
+          <text>{{ item.name }}</text>
+          <checkbox value="{{ item.value }}" />
+        </label>
+      </checkbox-group> -->
 
-      <textarea
-        name="textarea"
-        placeholder="textarea"
-        bindinput="inputHandler"
-      />
+      <radio-group name="radio" bindchange="inputHandler">
+        <label wx:for="{{ items }}" wx:key="key">
+          <text>{{ item.name }}</text>
+          <radio value="{{ item.value }}" />
+        </label>
+      </radio-group>
 
       <button form-type="submit">提交</button>
 
