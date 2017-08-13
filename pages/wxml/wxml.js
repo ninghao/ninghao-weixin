@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentView: 'red'
+    images: [
+      'https://raw.githubusercontent.com/ninghao/ninghao-images/master/weixin/app/demo-1.jpg',
+      'https://raw.githubusercontent.com/ninghao/ninghao-images/master/weixin/app/demo-2.jpg',
+      'https://raw.githubusercontent.com/ninghao/ninghao-images/master/weixin/app/demo-3.jpg',
+    ]
   },
 
   setScrollView(event) {

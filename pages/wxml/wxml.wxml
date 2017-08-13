@@ -1,22 +1,11 @@
-<scroll-view
-  scroll-y="{{ true }}"
-  style="height: 180px"
-  scroll-into-view="{{ currentView }}"
-  scroll-with-animation="{{ true }}"
+<swiper
+  indicator-dots="{{ true }}"
+  indicator-color="rgba(255, 255, 255, 0.3)"
+  indicator-active-color="#ffffff"
 >
-  <view class="view-container">
-    <view id="red" class="red" hover-class="lighten">
-      <text>1</text>
-    </view>
-    <view id="yellow" class="yellow" hover-class="lighten">
-      <text>2</text>
-    </view>
-    <view id="blue" class="blue" hover-class="lighten">
-      <text>3</text>
-    </view>
-  </view>
-</scroll-view>
-
-<button bindtap="setScrollView" data-view="red">red</button>
-<button bindtap="setScrollView" data-view="yellow">yellow</button>
-<button bindtap="setScrollView" data-view="blue">blue</button>
+  <block wx:for="{{ images }}">
+    <swiper-item>
+      <image src="{{ item }}" />
+    </swiper-item>
+  </block>
+</swiper>
