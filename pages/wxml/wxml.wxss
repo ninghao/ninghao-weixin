@@ -1,4 +1,4 @@
-input, textarea {
+input, textarea, picker {
   padding: 8px;
   background: #ffffff;
   margin: 8px;

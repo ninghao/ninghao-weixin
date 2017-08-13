@@ -6,19 +6,11 @@ Page({
    */
   data: {
     items: [
-      {
-        name: '中国',
-        value: 'CN'
-      },
-      {
-        name: '泰国',
-        value: 'TH'
-      },
-      {
-        name: '日本',
-        value: 'JP'
-      },
-    ]
+      '中国',
+      '泰国',
+      '日本'
+    ],
+    pick: 0
   },
 
   formSubmit(event) {
@@ -26,6 +18,9 @@ Page({
   },
 
   inputHandler(event) {
+    this.setData({
+      pick: event.detail.value
+    })
     console.log(event.detail.value)
   },
 
