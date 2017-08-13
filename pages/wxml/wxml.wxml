@@ -1,22 +1,11 @@
-<view class="container vertical centered">
-
-  <view
-    id="header"
-    class="header"
-    style="color: #6435c9"
-  >
-    <text
-      data-title="views"
-      bindtap="tapHandler"
-      hidden="{{ false }}"
-      wx:if="{{ true }}"
-    >
-      views
-    </text>
+<view class="view-container">
+  <view class="red" hover-class="lighten">
+    <text>1</text>
   </view>
-  <icon type="info" color="#6435c9" size="40" />
-
-</view>
-<view class="image">
-  <image src="/assets/images/landscape.png"></image>
+  <view class="yellow" hover-class="lighten">
+    <text>2</text>
+  </view>
+  <view class="blue" hover-class="lighten">
+    <text>3</text>
+  </view>
 </view>
