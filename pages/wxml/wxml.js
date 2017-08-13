@@ -5,12 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    items: [
-      '中国',
-      '泰国',
-      '日本'
-    ],
-    pick: ['山东省', '济南市', '槐荫区']
+    markers: [
+      {
+        id: 0,
+        longitude: 117.0311013,
+        latitude: 36.662447,
+        iconPath: '/assets/icons/pin.png',
+        width: 22,
+        height: 40,
+        callout: {
+          content: '黑虎泉',
+          fontSize: 14,
+          color: '#000',
+          padding: 8,
+          bgColor: '#ffffff',
+          borderRadius: 4,
+          boxShadow: '4px 8px 16px 0 rgba(0, 0, 0, 0.18)'
+        }
+      }
+    ]
   },
 
   play(event) {
