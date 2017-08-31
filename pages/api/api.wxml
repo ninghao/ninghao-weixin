@@ -7,7 +7,13 @@
 
   <view wx:if="{{ images.length > 0 }}" class="preview">
     <view wx:for="{{ images }}" wx:key="{{ index }}">
-      <image src="{{ item }}" mode="aspectFill"></image>
+      <image
+        src="{{ item }}"
+        mode="aspectFill"
+        data-src="{{ item }}"
+        bindtap="preview">
+
+      </image>
     </view>
   </view>
 </view>

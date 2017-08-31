@@ -16,5 +16,12 @@ Page({
         })
       }
     })
+  },
+
+  preview(event) {
+    wx.previewImage({
+      current: event.target.dataset.src,
+      urls: this.data.images
+    })
   }
 })
