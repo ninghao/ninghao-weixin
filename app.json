@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/api/api",
     "pages/wxml/wxml",
     "pages/index/index",
     "pages/event/event",
@@ -30,6 +31,12 @@
         "pagePath": "pages/wxml/wxml",
         "iconPath": "assets/icons/web.png",
         "selectedIconPath": "assets/icons/web-active.png"
+      },
+      {
+        "text": "接口",
+        "pagePath": "pages/api/api",
+        "iconPath": "assets/icons/io.png",
+        "selectedIconPath": "assets/icons/io-active.png"
       },
       {
         "text": "活动",
