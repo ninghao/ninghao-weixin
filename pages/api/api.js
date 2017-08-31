@@ -1,7 +1,8 @@
 // pages/api/api.js
 Page({
   data: {
-    images: []
+    images: [],
+    progress: []
   },
 
   tapHandler(event) {
@@ -15,14 +16,22 @@ Page({
           images: response.tempFilePaths
         })
 
-        response.tempFilePaths.map((filePath) => {
-          wx.uploadFile({
+        response.tempFilePaths.map((filePath, index) => {
+          const uploadTask = wx.uploadFile({
             url: 'https://sandbox.ninghao.net/api/uploads',
             filePath: filePath,
             name: 'uploads',
             success: (response) => {
               console.log(response)
             }
+          })
+
+          uploadTask.onProgressUpdate((response) => {
+            this.data.progress[index] = response.progress
+
+            this.setData({
+              progress: this.data.progress
+            })
           })
         })
       }
