@@ -1,7 +1,7 @@
 // pages/api/api.js
 Page({
   data: {
-
+    images: []
   },
 
   tapHandler(event) {
@@ -11,6 +11,9 @@ Page({
       sourceType: ['album', 'camera'],
       success: (response) => {
         console.log(response)
+        this.setData({
+          images: response.tempFilePaths
+        })
       }
     })
   }

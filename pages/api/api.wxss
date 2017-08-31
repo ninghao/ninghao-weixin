@@ -14,3 +14,10 @@ button:focus, button:active {
   color: #fff;
   background-color: #4f20b5;
 }
+
+.preview image {
+  padding: 2px;
+  margin: 2px;
+  width: 80px;
+  height: 80px;
+}
