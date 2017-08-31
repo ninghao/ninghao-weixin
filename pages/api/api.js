@@ -14,6 +14,17 @@ Page({
         this.setData({
           images: response.tempFilePaths
         })
+
+        response.tempFilePaths.map((filePath) => {
+          wx.uploadFile({
+            url: 'https://sandbox.ninghao.net/api/uploads',
+            filePath: filePath,
+            name: 'uploads',
+            success: (response) => {
+              console.log(response)
+            }
+          })
+        })
       }
     })
   },
