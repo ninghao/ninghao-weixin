@@ -4,19 +4,8 @@
     <button bindtap="tapHandler">push me</button>
 
   </view>
-
-  <view wx:if="{{ images.length > 0 }}" class="preview">
-    <view wx:for="{{ images }}" wx:key="{{ index }}">
-      <image
-        src="{{ item }}"
-        mode="aspectFill"
-        data-src="{{ item }}"
-        bindtap="preview">
-        <progress percent="{{ progress[index] }}" />
-      </image>
-    </view>
-  </view>
 </view>
+
 <view class="image">
   <image src="/assets/images/landscape.png"></image>
 </view>
