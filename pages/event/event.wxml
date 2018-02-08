@@ -3,6 +3,6 @@
     ￥<text style="font-size: 40px;">0.03</text>
   </view>
   <view>
-    <button type="primary">确认支付</button>
+    <button type="primary" bindtap="pay">确认支付</button>
   </view>
 </view>
